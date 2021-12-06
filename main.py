@@ -1,2 +1,4 @@
-x=input("Ievadi tekstu! ")
-print(x.count(' ')+1)
+import re
+x = input("Ievadi tekstu: ")
+text = re.sub(r'\{[^}]*\}', '', x)
+print(text)
